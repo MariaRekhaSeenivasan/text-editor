@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Text Editor</title>
+    <link rel="stylesheet" href="text.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600&family=Open+Sans:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="editor-container">
+        <div class="toolbar">
+            <label>Font Family:</label>
+            <select id="font-family-selector"></select>
+            <label>Variant:</label>
+            <select id="font-weight-selector"></select>
+            Italic:
+            <label class="switch"> 
+                <input type="checkbox" id="italic-toggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div id="editor" contenteditable="true"></div>
+        <div class="controls">
+            <button id="save-button">Save</button>
+            <button id="reset-button">Reset</button>
+        </div>
+    </div>
+    <script src="text1.js"></script>
+</body>
+</html>
